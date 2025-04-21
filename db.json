@@ -1,0 +1,182 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Ração Premier Fórmula para Cães Sênior",
+      "description": "Indicada para cães sênior, envelhecimento saudável, suporte diferenciado para articulações senis, saúde intestinal, minimiza o tártaro ou cálculo dentário, com a presença do hexametafostato, importante ingrediente para a saúde bucal.",
+      "price": 245,
+      "cover": "https://sujeitoprogramador.com/wp-content/uploads/2023/06/racao1.png",
+      "category": "Ração",
+      "sold": 120,
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "title": "Ração Royal Canin Maxi para Cães Adultos",
+      "description": "Quirera de arroz, milho integral moído*, farinha de vísceras de aves, farinha de proteína isolada de suíno, gordura suína, glúten de milho*, polpa de beterraba, óleo de peixe refinado, óleo de soja refinado*, levedura seca de cervejaria, gordura de frango, zeolita, sulfato de condroitina, hidrocloreto de glicosamina, extrato de Marigold, cloreto de sódio (sal comum), cloreto de potássio, carbonato de cálcio, fosfato bicálcico, fosfato monocálcico, fosfato monossódico, vitaminas (A, C, E, D3, B1, B2, B6, B12, PP)",
+      "price": 476.99,
+      "cover": "https://sujeitoprogramador.com/wp-content/uploads/2023/06/racao2.png",
+      "category": "Ração",
+      "sold": 87,
+      "rating": 4.8
+    },
+    {
+      "id": 3,
+      "title": "Ração Úmida Premier Orgânico para Cães Adultos",
+      "description": "Água, carne de aves orgânica (frango - 37%), sementes de chia orgânicas, quinoa orgânica, goma guar, vitamina A, vitamina B12, vitamina C, vitamina D3, vitamina E, vitamina K3, ácido fólico, ácido pantotênico, biotina, cloreto de colina, niacina, piridoxina, riboflavina, tiamina, selênio metionina.",
+      "price": 8.99,
+      "cover": "https://sujeitoprogramador.com/wp-content/uploads/2023/06/racao3.png",
+      "category": "Ração",
+      "sold": 210,
+      "rating": 4.3
+    },
+    {
+      "id": 4,
+      "title": "Ração Royal Canin Medium Ageing 15kg",
+      "description": "Com o passar do tempo, assim como nós, os cães precisam de certos cuidados – e um deles é com a alimentação. Com a Ração Para Cães Idosos Royal Canin, por sua vez, os pets tem uma vida mais saudável e duradoura.",
+      "price": 545.99,
+      "cover": "https://sujeitoprogramador.com/wp-content/uploads/2023/06/racao4.png",
+      "category": "Ração",
+      "sold": 95,
+      "rating": 4.6
+    },
+    {
+      "id": 5,
+      "title": "Brinquedo Interativo Pet Games Petball para Cães",
+      "description": "As brincadeiras são parte super importante na rotina dos nossos amigos de quatro patas. Além de serem muito divertidas, elas contribuem para um desenvolvimento saudável e feliz. Por isso, vale a pena conhecer o Petball, um brinquedinho incrível que deixará os momentos de descontração do seu cãozinho ainda melhores!",
+      "price": 29.99,
+      "cover": "https://sujeitoprogramador.com/wp-content/uploads/2023/06/brinq1.png",
+      "category": "Brinquedo",
+      "sold": 180,
+      "rating": 4.2
+    },
+    {
+      "id": 6,
+      "title": "Brinquedo Líder Pet Bola Cravo para Cães - Cores Sortidas",
+      "description": "As brincadeiras são parte super importante na rotina dos nossos amigos de quatro patas. Além de serem muito divertidas, elas contribuem para um desenvolvimento saudável e feliz. Por isso, vale a pena conhecer o Petball, um brinquedinho incrível.",
+      "price": 1139.00,
+      "cover": "https://sujeitoprogramador.com/wp-content/uploads/2023/06/brinq2.png",
+      "category": "Brinquedo",
+      "sold": 43,
+      "rating": 3.9
+    },
+    {
+      "id": 7,
+      "title": "Brinquedo Chalesco Macaco Pelúcia Marrom para Cães",
+      "description": "Ter um momento de lazer com o seu animal de estimação é fundamental. Seja no parque ou dentro de casa, essa atividade é aproveitada pelo pet em qualquer idade. E os cãezinhos adoram ter um brinquedo para sua diversão. Pensando nisso, a Chalesco desenvolveu um macaquinho de pelúcia.",
+      "price": 34.99,
+      "cover": "https://sujeitoprogramador.com/wp-content/uploads/2023/06/brinq3.png",
+      "category": "Brinquedo",
+      "sold": 125,
+      "rating": 4.4
+    },
+    {
+      "id": 8,
+      "title": "Brinquedo Chalesco Pelúcia Polvo Colorido para Cães",
+      "description": "É extremamente importante que seu bichinho de estimação tenha momentos de lazer e desfrute de muitas brincadeiras. Por isso, oferecer brinquedos como um bicho de pelúcia para cachorro pode ser a melhor escolha!",
+      "price": 50.00,
+      "cover": "https://sujeitoprogramador.com/wp-content/uploads/2023/06/brinq4.png",
+      "category": "Brinquedo",
+      "sold": 153,
+      "rating": 4.7
+    }
+  ],
+  "reviews": [
+    {
+      "productId": 1,
+      "rating": 5,
+      "comment": "Meu cachorro adorou! A saúde dele melhorou visivelmente.",
+      "name": "Carlos"
+    },
+    {
+      "productId": 1,
+      "rating": 4,
+      "comment": "Muito boa, mas o preço podia ser mais acessível.",
+      "name": "Ana"
+    },
+    {
+      "productId": 2,
+      "rating": 5,
+      "comment": "Produto excelente! Entrega rápida também.",
+      "name": "Bruno"
+    },
+    {
+      "productId": 2,
+      "rating": 4.5,
+      "comment": "A composição é ótima. Meu cão se adaptou super bem.",
+      "name": "Juliana"
+    },
+    {
+      "productId": 3,
+      "rating": 4,
+      "comment": "Gostei bastante. Meu cachorro come tudo!",
+      "name": "Fernanda"
+    },
+    {
+      "productId": 3,
+      "rating": 4.5,
+      "comment": "Cheiro bom e ingredientes de qualidade.",
+      "name": "Lucas"
+    },
+    {
+      "productId": 4,
+      "rating": 5,
+      "comment": "Perfeita para meu dog idoso. Muito satisfeito.",
+      "name": "Eduardo"
+    },
+    {
+      "productId": 4,
+      "rating": 4.2,
+      "comment": "Boa qualidade, mas chegou com a embalagem amassada.",
+      "name": "Mariana"
+    },
+    {
+      "productId": 5,
+      "rating": 4,
+      "comment": "Muito divertido, meu cão não larga mais.",
+      "name": "Tiago"
+    },
+    {
+      "productId": 5,
+      "rating": 4.3,
+      "comment": "Boa durabilidade e ótimo custo-benefício.",
+      "name": "Isabela"
+    },
+    {
+      "productId": 6,
+      "rating": 4,
+      "comment": "Bonito, mas meu cachorro destruiu rápido.",
+      "name": "Rodrigo"
+    },
+    {
+      "productId": 6,
+      "rating": 3.8,
+      "comment": "Esperava que durasse mais.",
+      "name": "Patrícia"
+    },
+    {
+      "productId": 7,
+      "rating": 4.5,
+      "comment": "Meu pet amou o macaquinho, super fofo.",
+      "name": "Renata"
+    },
+    {
+      "productId": 7,
+      "rating": 4.3,
+      "comment": "Boa qualidade e entrega rápida.",
+      "name": "Marcelo"
+    },
+    {
+      "productId": 8,
+      "rating": 5,
+      "comment": "Colorido e resistente. Ótimo brinquedo!",
+      "name": "Beatriz"
+    },
+    {
+      "productId": 8,
+      "rating": 4.4,
+      "comment": "Meu cachorro se diverte muito com esse brinquedo.",
+      "name": "Daniel"
+    }
+  ]
+}
