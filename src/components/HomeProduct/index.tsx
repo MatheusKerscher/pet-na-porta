@@ -46,7 +46,7 @@ const HomeProduct = ({
           {category}
         </span>
 
-        <p className="mb-2 mt-1 text-center">{title}</p>
+        <p className="mb-2 mt-1 text-center text-sm">{title}</p>
 
         <span className="text-lg font-bold">{formattedPrice}</span>
       </Link>

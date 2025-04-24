@@ -5,6 +5,8 @@ import type { Dispatch, SetStateAction } from "react";
 type FiltersProps = {
   categories: string[];
   prices: number[];
+  selectCategory: string;
+  selectPrice: number;
   setCategory: Dispatch<SetStateAction<string>>;
   setPrice: Dispatch<SetStateAction<number>>;
 };
@@ -12,20 +14,28 @@ type FiltersProps = {
 const Filters = ({
   categories,
   prices,
+  selectCategory,
+  selectPrice,
   setCategory,
-  setPrice
+  setPrice,
 }: FiltersProps) => {
-  return (
-    <div>
-      <section>
-        <span className="font-medium">Por categoria</span>
+  const clearFilters = () => {
+    setCategory("");
+    setPrice(0);
+  };
 
-        <ul className="ms-2 mt-1">
+  return (
+    <div className="mb-6 lg:mb-0">
+      <section>
+        <span className="font-medium text-sm lg:text-base">Por categoria</span>
+
+        <ul className="ms-2 mt-1 flex flex-wrap gap-3 lg:block">
           {categories.map((category) => (
             <li key={category}>
               <Checkbox
+                checked={selectCategory === category}
                 onChange={(e: CheckboxChangeEvent) => {
-                  setCategory(e.target.checked ? category : "")
+                  setCategory(e.target.checked ? category : "");
                 }}
               >
                 {category}
@@ -36,14 +46,15 @@ const Filters = ({
       </section>
 
       <section className="mt-3">
-        <span className="font-medium">Por preço</span>
+        <span className="font-medium text-sm lg:text-base">Por preço</span>
 
-        <ul className="ms-2 mt-1">
+        <ul className="ms-2 mt-1 flex flex-wrap gap-3 lg:block">
           {prices.map((price) => (
             <li key={price}>
               <Checkbox
+                checked={selectPrice === price}
                 onChange={(e: CheckboxChangeEvent) => {
-                  setPrice(e.target.checked ? price : 0)
+                  setPrice(e.target.checked ? price : 0);
                 }}
               >
                 Até {toBrazilianCurrency(price)}
@@ -52,6 +63,15 @@ const Filters = ({
           ))}
         </ul>
       </section>
+
+      {(selectCategory.length > 0 || selectPrice > 0) && (
+        <button
+          className="mt-4 rounded bg-primary text-white px-2 py-1 transition-all duration-200 hover:cursor-pointer hover:scale-102"
+          onClick={clearFilters}
+        >
+          Limpar filtros
+        </button>
+      )}
     </div>
   );
 };
