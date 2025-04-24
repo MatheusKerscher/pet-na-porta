@@ -1,4 +1,4 @@
-import type { Dispatch, FormEvent, SetStateAction } from "react";
+import type { Dispatch, SetStateAction } from "react";
 
 import { IoMdClose } from "react-icons/io";
 
