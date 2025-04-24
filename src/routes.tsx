@@ -14,7 +14,7 @@ function AppRoutes() {
       
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/product" element={<Product />} />
+        <Route path="/product/:idProduct" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
 
         <Route path="*" element={<Error />} />
