@@ -12,6 +12,7 @@ import toBrazilianCurrency from "../../utils/toBrazilianCurrency";
 import Spinner from "../../components/Spinner/indext";
 import ProductComment from "../../components/ProductComment";
 import ProductInfo from "../../components/ProductInfo";
+import BackButton from "../../components/BackButton";
 
 const Product = () => {
   const { productId } = useParams();
@@ -72,23 +73,27 @@ const Product = () => {
   }
 
   return (
-    <main className="w-full lg:max-w-10/12 lg:mx-auto px-3 h-[calc(100dvh-92px)]">
-      <ProductInfo {...product} />
+    <div className="w-full lg:max-w-10/12 lg:mx-auto px-3 h-[calc(100dvh-92px)] pt-4">
+      <BackButton />
 
-      {comments.length > 0 && (
-        <section>
-          <h4 className="font-medium text-center text-lg md:text-start lg:text-xl mb-4">
-            Avaliações ({comments.length})
-          </h4>
+      <main className="w-full">
+        <ProductInfo {...product} />
 
-          <div className="w-full flex items-stretch flex-wrap gap-4 pb-4">
-            {comments.map((comment) => (
-              <ProductComment key={comment.id} {...comment} />
-            ))}
-          </div>
-        </section>
-      )}
-    </main>
+        {comments.length > 0 && (
+          <section>
+            <h4 className="font-medium text-center text-lg md:text-start lg:text-xl mb-4">
+              Avaliações ({comments.length})
+            </h4>
+
+            <div className="w-full flex items-stretch flex-wrap gap-4 pb-4">
+              {comments.map((comment) => (
+                <ProductComment key={comment.id} {...comment} />
+              ))}
+            </div>
+          </section>
+        )}
+      </main>
+    </div>
   );
 };
 

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import useCartContext from "../../hooks/useCartContext";
 import CartProduct from "../../components/CartProduct";
 import PurchaseSummary from "../../components/PurchaseSummary";
-
+import BackButton from "../../components/BackButton";
 
 const Cart = () => {
   const { cartProducts } = useCartContext();
@@ -26,27 +26,31 @@ const Cart = () => {
   }
 
   return (
-    <main className="w-full lg:max-w-10/12 lg:mx-auto h-[calc(100vh-60px)] px-4 flex flex-col sm:grid sm:grid-cols-3">
-      <section className="sm:col-span-2 py-4">
-        <h3 className="text-lg md:text-xl font-medium">Meu carrinho</h3>
+    <div className="w-full lg:max-w-10/12 lg:mx-auto h-[calc(100vh-60px)] pt-4">
+      <BackButton />
+      
+      <main className="w-full px-4 flex flex-col sm:grid sm:grid-cols-3">
+        <section className="sm:col-span-2 py-4">
+          <h3 className="text-lg md:text-xl font-medium">Meu carrinho</h3>
 
-        <div className="flex flex-col bg-white shadow rounded-lg p-2 mt-3 divide-y divide-gray-300">
-          {cartProducts.map((cartProduct) => (
-            <CartProduct key={cartProduct.id} {...cartProduct} />
-          ))}
-        </div>
-      </section>
+          <div className="flex flex-col bg-white shadow rounded-lg p-2 mt-3 divide-y divide-gray-300">
+            {cartProducts.map((cartProduct) => (
+              <CartProduct key={cartProduct.id} {...cartProduct} />
+            ))}
+          </div>
+        </section>
 
-      <section className="py-4 mx-0 sm:mx-4">
-        <h3 className="text-lg md:text-xl font-medium text-start sm:text-center">
-          Resumo da compra
-        </h3>
+        <section className="py-4 mx-0 sm:mx-4">
+          <h3 className="text-lg md:text-xl font-medium text-start sm:text-center">
+            Resumo da compra
+          </h3>
 
-        <div className="flex flex-col bg-white shadow rounded-lg p-2 mt-3 divide-y divide-gray-300">
-          <PurchaseSummary />
-        </div>
-      </section>
-    </main>
+          <div className="flex flex-col bg-white shadow rounded-lg p-2 mt-3 divide-y divide-gray-300">
+            <PurchaseSummary />
+          </div>
+        </section>
+      </main>
+    </div>
   );
 };
 

@@ -188,7 +188,7 @@ const Home = () => {
               ))}
             </section>
           ) : (
-            <div className="h-[calc(100dvh-124px)] flex items-center justify-center flex-4 text-zinc-500 font-medium pt-5 lg:pt-0 text-center">
+            <div className="h-[calc(100dvh-134px)] flex items-center justify-center flex-4 text-zinc-500 font-medium pt-5 lg:pt-0 text-center">
               Não encontramos nenhum produto com os filtros escolhidos :(
             </div>
           )
@@ -199,7 +199,7 @@ const Home = () => {
             ))}
           </section>
         ) : (
-          <div className="h-[calc(100dvh-124px)] flex items-center justify-center flex-4 text-zinc-500 font-medium pt-5 lg:pt-0 text-center">
+          <div className="h-[calc(100dvh-134px)] flex items-center justify-center flex-4 text-zinc-500 font-medium pt-5 lg:pt-0 text-center">
             Não encontramos nenhum produto :(
           </div>
         )}
