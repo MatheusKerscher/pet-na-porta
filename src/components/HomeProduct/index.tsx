@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import type { Product } from "../../types/product";
-import { FaRegStar, FaRegStarHalfStroke, FaStar } from "react-icons/fa6";
+import StartRatting from "../StarRatting";
 
 const HomeProduct = ({
   id,
@@ -11,19 +11,7 @@ const HomeProduct = ({
   sold,
   rating,
 }: Product) => {
-  const stars = [];
-  const fullStars = Math.floor(rating);
-  const halfStar = rating % 1 >= 0.5;
-
-  for (let i = 0; i < 5; i++) {
-    if (i < fullStars) {
-      stars.push(<FaStar key={i} size={14} />);
-    } else if (i === fullStars && halfStar) {
-      stars.push(<FaRegStarHalfStroke key={i} size={14} />);
-    } else {
-      stars.push(<FaRegStar key={i} size={14} />);
-    }
-  }
+  
 
   return (
     <div className="w-full bg-white p-3 rounded-xl transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:shadow-lg">
@@ -35,14 +23,14 @@ const HomeProduct = ({
         />
 
         <div className="text-tertiary flex gap-0.5 items-center">
-          {stars.map((start) => start)}
+          <StartRatting rating={rating}/>
 
           <span className="text-black text-sm ms-1">
             {rating} ({sold})
           </span>
         </div>
 
-        <span className="text-xs mt-2 rounded-full bg-secondary text-black w-fit px-4 py-0.5">
+        <span className="text-xs font-medium mt-2 rounded-full bg-secondary text-white w-fit px-4 py-0.5">
           {category}
         </span>
 

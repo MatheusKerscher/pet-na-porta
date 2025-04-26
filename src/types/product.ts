@@ -8,3 +8,7 @@ export interface Product {
   rating: number;
   formattedPrice: string
 }
+
+export interface ProductDetails extends Product {
+  description: string
+}

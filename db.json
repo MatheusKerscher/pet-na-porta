@@ -83,96 +83,112 @@
   ],
   "reviews": [
     {
+      "id": 1,
       "productId": 1,
       "rating": 5,
       "comment": "Meu cachorro adorou! A saúde dele melhorou visivelmente.",
       "name": "Carlos"
     },
     {
+      "id": 2,
       "productId": 1,
       "rating": 4,
       "comment": "Muito boa, mas o preço podia ser mais acessível.",
       "name": "Ana"
     },
     {
+      "id": 3,
       "productId": 2,
       "rating": 5,
       "comment": "Produto excelente! Entrega rápida também.",
       "name": "Bruno"
     },
     {
+      "id": 4,
       "productId": 2,
       "rating": 4.5,
       "comment": "A composição é ótima. Meu cão se adaptou super bem.",
       "name": "Juliana"
     },
     {
+      "id": 5,
       "productId": 3,
       "rating": 4,
       "comment": "Gostei bastante. Meu cachorro come tudo!",
       "name": "Fernanda"
     },
     {
+      "id": 6,
       "productId": 3,
       "rating": 4.5,
       "comment": "Cheiro bom e ingredientes de qualidade.",
       "name": "Lucas"
     },
     {
+      "id": 7,
       "productId": 4,
       "rating": 5,
       "comment": "Perfeita para meu dog idoso. Muito satisfeito.",
       "name": "Eduardo"
     },
     {
+      "id": 8,
       "productId": 4,
       "rating": 4.2,
       "comment": "Boa qualidade, mas chegou com a embalagem amassada.",
       "name": "Mariana"
     },
     {
+      "id": 9,
       "productId": 5,
       "rating": 4,
       "comment": "Muito divertido, meu cão não larga mais.",
       "name": "Tiago"
     },
     {
+      "id": 10,
       "productId": 5,
       "rating": 4.3,
       "comment": "Boa durabilidade e ótimo custo-benefício.",
       "name": "Isabela"
     },
     {
+      "id": 11,
       "productId": 6,
       "rating": 4,
       "comment": "Bonito, mas meu cachorro destruiu rápido.",
       "name": "Rodrigo"
     },
     {
+      "id": 12,
       "productId": 6,
       "rating": 3.8,
       "comment": "Esperava que durasse mais.",
       "name": "Patrícia"
     },
     {
+      "id": 13,
       "productId": 7,
       "rating": 4.5,
       "comment": "Meu pet amou o macaquinho, super fofo.",
       "name": "Renata"
     },
     {
+      "id": 14,
       "productId": 7,
       "rating": 4.3,
       "comment": "Boa qualidade e entrega rápida.",
       "name": "Marcelo"
     },
     {
+      "id": 15,
       "productId": 8,
       "rating": 5,
       "comment": "Colorido e resistente. Ótimo brinquedo!",
       "name": "Beatriz"
     },
     {
+      "id": 16,
       "productId": 8,
       "rating": 4.4,
       "comment": "Meu cachorro se diverte muito com esse brinquedo.",
