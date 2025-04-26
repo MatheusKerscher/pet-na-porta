@@ -112,6 +112,14 @@ const Home = () => {
     return <Spinner tip="Buscando produtos..." />;
   }
 
+  if (products.length === 0 && productsFiltered.length === 0) {
+    return (
+      <div className="w-full h-[calc(100vh-84px)] px-6 text-zinc-500 font-medium flex justify-center items-center">
+        Não encontramos nenhum produto :(
+      </div>
+    );
+  }
+
   return (
     <main className="w-full h-[calc(100vh-104px)] px-6">
       <section className="w-full">
