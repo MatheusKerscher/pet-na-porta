@@ -1,8 +1,7 @@
 # Pet na Porta
 Website de produtos para pet destinado a listar produtos, visualizar detalhes do produto e gerenciar o carrinho do cliente. Esse projeto foi desenvolvido para melhorar meus conhecimentos em Context API e useReducer do React.
 
-![Thumbnail-Home](/thumbnail-1.png)
-![Thumbnail-Cart](/thumbnail-2.png)
+![Thumbnail](/thumbnail.png)
 
 ## Instalação e Uso
 
